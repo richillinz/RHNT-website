@@ -9,13 +9,39 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="antialiased bg-[#050505] text-white font-sans">
-    
-    <!-- Hero Section -->
-    <main class="flex flex-col items-center justify-center h-screen text-center">
-        <img src="assets/RHNT--token-symbol-6c6c655b-88a4-473d-96c4-03f513c2d8a3.png" alt="Richnet Logo" class="w-32 h-32 mb-8 rounded-full border border-cyan-500">
-        <h1 class="text-5xl font-extrabold text-white mb-4">Richnet Network</h1>
-        <p class="text-gray-400 text-xl">The Future of Decentralized Finance.</p>
-    </main>
+
+    <nav class="sticky top-0 z-50 bg-black/50 backdrop-blur-lg border-b border-gray-900">
+        <div class="flex items-center justify-between px-8 py-4 max-w-7xl mx-auto">
+            <div class="flex items-center space-x-3">
+                <img src="assets/RHNT--token-symbol-6c6c655b-88a4-473d-96c4-03f513c2d8a3.png" alt="Richnet Logo" class="w-10 h-10 rounded-full border border-cyan-500">
+                <span class="text-xl font-bold tracking-wider uppercase">Richnet</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
+                <a href="#about" class="hover:text-cyan-400 transition">About</a>
+                <a href="#tokenomics" class="hover:text-cyan-400 transition">Tokenomics</a>
+                <a href="#roadmap" class="hover:text-cyan-400 transition">Roadmap</a>
+            </div>
+            <a href="#" class="bg-cyan-600 hover:bg-cyan-500 text-white px-6 py-2 rounded-full text-sm font-bold transition">Buy $RHNT</a>
+        </div>
+    </nav>
+
+    <section id="about" class="py-24 text-center">
+        <h1 class="text-5xl font-extrabold mb-6">The Future of <span class="text-cyan-400">Richnet Network</span></h1>
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto">Empowering the next generation of decentralized finance.</p>
+    </section>
+
+    <section id="tokenomics" class="max-w-7xl mx-auto px-8 py-20">
+        <h2 class="text-3xl font-bold text-center mb-12">Tokenomics</h2>
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+            <div class="crypto-card p-8 rounded-2xl"><h3 class="text-gray-400 uppercase">Total Supply</h3><p class="text-3xl font-bold">1B</p></div>
+            <div class="crypto-card p-8 rounded-2xl"><h3 class="text-gray-400 uppercase">Tax</h3><p class="text-3xl font-bold">0%</p></div>
+            <div class="crypto-card p-8 rounded-2xl"><h3 class="text-gray-400 uppercase">Liquidity</h3><p class="text-3xl font-bold">Locked</p></div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-500 text-sm">
+        &copy; 2026 Richnet Network. All rights reserved.
+    </footer>
 
     <script src="js/main.js"></script>
 </body>

@@ -1,17 +1,27 @@
+/* Base Styles */
 html { scroll-behavior: smooth; }
-body { background-color: #050505; color: white; }
+body { background-color: #050505; color: white; font-family: 'Inter', sans-serif; }
+
+/* The "Gradient Text" effect */
 .gradient-text {
     background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+/* Glassmorphism for Cards */
 .crypto-card {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
 }
+
 .crypto-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 242, 254, 0.1);
+    border-color: rgba(0, 242, 254, 0.5);
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.1);
 }
+
+/* Smooth fade container */
+.fade-in { opacity: 0; animation: fadeIn 1.5s ease-in forwards; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
